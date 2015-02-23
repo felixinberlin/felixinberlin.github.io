@@ -1,0 +1,80 @@
+#cube {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease 0s;
+    width: 100%;
+}
+figure.back {
+    border: 2px solid black;
+    color: white;
+    display: block;
+    font-size: 120px;
+    font-weight: bold;
+    height: 196px;
+    line-height: 196px;
+    position: absolute;
+    text-align: center;
+    width: 196px;
+}
+#cube.panels-backface-invisible figure {
+    backface-visibility: hidden;
+}
+#cube .front {
+    background: none repeat scroll 0 0 hsla(0, 100%, 50%, 0.7);
+    transform: rotateX(90deg);
+    transform: translateX(20px);
+    color: turquoise;
+    opacity: o.5;
+}
+#cube .back {
+    background: none repeat scroll 0 0 hsla(60, 100%, 50%, 0.7);
+}
+#cube .right {
+    background: none repeat scroll 0 0 hsla(120, 100%, 50%, 0.7);
+}
+#cube .left {
+    background: none repeat scroll 0 0 hsla(180, 100%, 50%, 0.7);
+}
+#cube .top {
+    background: none repeat scroll 0 0 hsla(240, 100%, 50%, 0.7);
+}
+#cube .bottom {
+    background: none repeat scroll 0 0 hsla(300, 100%, 50%, 0.7);
+}
+#cube .front {
+    transform: translateZ(100px);
+}
+#cube .back {
+    transform: rotateX(-180deg) translateZ(100px);
+}
+#cube .right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+#cube .left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+#cube .top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+#cube .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+#cube.show-front {
+    transform: translateZ(-100px);
+}
+#cube.show-back {
+    transform: translateZ(-100px) rotateX(-180deg);
+}
+#cube.show-right {
+    transform: translateZ(-100px) rotateY(-90deg);
+}
+#cube.show-left {
+    transform: translateZ(-100px) rotateY(90deg);
+}
+#cube.show-top {
+    transform: translateZ(-100px) rotateX(-90deg);
+}
+#cube.show-bottom {
+    transform: translateZ(-100px) rotateX(90deg);
+}
