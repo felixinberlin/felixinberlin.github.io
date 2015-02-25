@@ -1,3 +1,7 @@
+article{
+    padding: 12em;
+}
+
 #cube {
     height: 100%;
     position: absolute;
@@ -16,16 +20,13 @@ figure.back {
     position: absolute;
     text-align: center;
     width: 196px;
+        opacity: 0.5;
 }
-#cube.panels-backface-invisible figure {
-    backface-visibility: hidden;
-}
+
 #cube .front {
     background: none repeat scroll 0 0 hsla(0, 100%, 50%, 0.7);
-    transform: rotateX(90deg);
-    transform: translateX(20px);
     color: turquoise;
-    opacity: o.5;
+
 }
 #cube .back {
     background: none repeat scroll 0 0 hsla(60, 100%, 50%, 0.7);
@@ -59,22 +60,4 @@ figure.back {
 }
 #cube .bottom {
     transform: rotateX(-90deg) translateZ(100px);
-}
-#cube.show-front {
-    transform: translateZ(-100px);
-}
-#cube.show-back {
-    transform: translateZ(-100px) rotateX(-180deg);
-}
-#cube.show-right {
-    transform: translateZ(-100px) rotateY(-90deg);
-}
-#cube.show-left {
-    transform: translateZ(-100px) rotateY(90deg);
-}
-#cube.show-top {
-    transform: translateZ(-100px) rotateX(-90deg);
-}
-#cube.show-bottom {
-    transform: translateZ(-100px) rotateX(90deg);
 }
